@@ -1,12 +1,16 @@
 <div class="bg-dark"></div>
 
 <div class="home-information">
-	<h1 class="slogan">Any swipe can change your life.</h1>
-	<!--<button type="button">Sign in with Facebook</button> -->
-	<a class="btn btn-social btn-lg btn-facebook">
-		<i class="fa fa-facebook"></i> Sign in with Facebook
-	</a>
-	<br /><br />
+			<h1 class="slogan">Any swipe can change your life.</h1>
+			 	
+					
+<!-- "Sign in with facebook" link is added to the index page -->
+<!-- source: http://bootsnipp.com/snippets/featured/social-buttons-for-bootstrap -->			
+			<%= link_to "auth/facebook", class: "btn btn-social btn-lg btn-dropbox" do %>
+				<i class="fa fa-facebook"></i> Sign in with Facebook 
+			<% end %>
+			<br /><br />
+	
 </div>
 
 <!-- SLIDER BACKGROUND -->

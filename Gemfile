@@ -26,6 +26,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'omniauth-facebook'
+
+gem 'dotenv-rails', :groups => [:development, :test] #Gem for security for storing our credentials
+
+gem "paperclip" # management of Active record for images
+
+gem 'aws-sdk', '~> 2' #Amazon Web Service SDK for storing the profile picture
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

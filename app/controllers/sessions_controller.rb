@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 		redirect_to root_url, notice: "SIGNED IN"
 	end
 	
-		def destroy
+	def destroy
 		session[:user_id]  = nil
 		session[:omniauth] = nil
 		redirect_to root_url, notice: "SIGNED OUT"
