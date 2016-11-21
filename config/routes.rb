@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  get 'users/index'
+  #get 'users/index'
 
-  get 'users/edit'
+  #get 'users/edit'
 
   resources :users do
     member do
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   
     get 'auth/:provider/callback', to: 'sessions#create'
     
-##For the session destroy action facebook regular delete request to the sessions destroy action is added.
+#For the session destroy action facebook regular delete request to the sessions destroy action is added.
 
     match 'sign_out', to: 'sessions#destroy', via: :delete
  

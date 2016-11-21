@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
 #"current_user" method is created to check if a user is logged in
 
-   private
+  private
 
   def current_user
   	@current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -16,7 +16,8 @@ class ApplicationController < ActionController::Base
   	  #redirect_to root_path
   	#end
   #end
-
+  
+  #setting current_user method as an helper_method so that it can be used in views as well
   helper_method :current_user
   #helper_method :require_login
   
